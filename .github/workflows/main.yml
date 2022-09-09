@@ -4,6 +4,7 @@ name: deploy
 on:
 # Allows you to run this workflow manually from the Actions tab
   repository_dispatch:
+  workflow_dispatch:
     inputs:
       stage_name:
         description: 'Name of the stage to deploy to'
