@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: echo run identifier ${{ github.event.client_payload.id }}
+      - run: echo ${{ github.event.client_payload.id }}
       - run: echo $STAGE_NAME
       - run: npm ci
     # - run: npx @serverless/cloud test
